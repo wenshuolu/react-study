@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>电脑环境配</title>
+  </head>
+  <body>
+    在现代化的软件开发中，尤其是在企业中的团队协同开发流程与代码管理方面，git
+    都充当着不可或缺的角色。本章中将会讲述如何使用 git
+    来进行一些基本的版本控制操作与团队协同中的 git 使用流程管理与提交规范。 在
+    Git 快速上手章节中你将会了解 git
+    的基本概念与一些常用命令，能让你快速上手或复习 git 的基本操作。 在 Git
+    多人合作基本模型中，你将会了解到 git 的团队基本工作模型。 Git
+    工作流与分支管理规范是对于在企业级中 git
+    的团队协同流程的介绍与规范的讲解，你会学到团队开发中 git
+    在软件开发生命周期中的角色。 Git 提交规范总结了在 git
+    使用过程中对于代码记录的提交信息的规范要求。 Git 快速上手 Git 的简单介绍 Git
+    是一个用于控制管理代码历史版本的工具，区别于集中式的 SVN，Git
+    使用了分布式的管理方式。
+    团队每人都拥有一个自己的本地仓库，不仅可以自己本地进行版本管理，也可以将代码版本在各个成员间共享。
+    初始化一个本地仓库 在开始操作之前，确保你的系统环境已经安装了 Git，
+    https://git-scm.com 上提供了各个系统环境的 Git 下载。 在使用 git
+    命令进行操作之前，你需要一个 git
+    仓库，你可以移动到你的工作目录，命令行中执行 $ git init Initialized empty
+    Git repository in /path/to/work/directory/.git/ 克隆远程仓库
+    当然如果你已经有了一个远程仓库，你就不需要初始化一个本地仓库了，你可以使用：
+    $ git status On branch master No commits yet nothing to commit (create/copy
+    files and use "git add" to track) 追踪文件修改
+    接下来我们可以为这个仓库添加一些文件, 在工作目录下执行： $ touch index.js
+    上面的指令为我们在工作目录下创建一个名为 index.js 的文件, 使用 git status
+    可以查看到已经添加了一个 index.js 文件, 下面我们在这个文件中写入一些内容： $
+    echo "console.log('learning git!');" > index.js
+  </body>
+</html>
